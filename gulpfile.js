@@ -3,14 +3,13 @@
 // // //////////////////////////////////////////////
 
 var config = {
-	jsConcatFiles: [ 
+	jsConcatFiles: [
 		'./app/js/main.js'
-	], 
+	],
 	buildFilesFoldersRemove:[
-		'build/scss/', 
+		'build/scss/',
 		'build/js/!(*.min.js)',
 		'build/bower.json',
-		'build/bower_components/',
 		'build/maps/'
 	]
 };
@@ -56,7 +55,7 @@ gulp.task('scripts', function() {
 		.pipe(concat('temp.js'))
 		.pipe(uglify())
 		.on('error', errorlog)
-		.pipe(rename('app.min.js'))		
+		.pipe(rename('app.min.js'))
     .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest('./app/js/'))
 
@@ -76,7 +75,7 @@ gulp.task('styles', function() {
 			.pipe(autoprefixer({
 	            browsers: ['last 3 versions'],
 	            cascade: false
-	        }))	
+	        }))
 		.pipe(sourcemaps.write('../maps'))
 		.pipe(gulp.dest('app/css'))
 		.pipe(reload({stream:true}));

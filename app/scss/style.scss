@@ -1,0 +1,12 @@
+@import 'base';
+@import 'tipography';
+
+.container {
+	max-width: 800px;
+	height: 300px;
+	font: $font-padrao;
+}
+
+h4 {
+	font-size: 18px;
+}

@@ -1,2 +1,32 @@
+@import 'freelancer';
 @import 'base';
 @import 'tipography';
+
+.topo-azul {
+	background-color: #142b42;
+}
+
+.navbar-default .navbar-brand {
+  color: $verde-escuro;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: $verde-escuro;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+}
+
+header .intro-text .name {
+  color: $branco;
+  text-shadow: 2px 1px 1px #000;
+}
+
+header .intro-text .skills {
+  color: $marrom-claro;
+}

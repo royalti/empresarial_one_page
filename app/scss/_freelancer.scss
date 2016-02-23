@@ -82,14 +82,14 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #000;
-    background-image: url("../img/sl11.jpg");
+    background-image: url("../img/header.jpg");
     background-repeat: no-repeat;
     background-color: #142b42;
 }
 
 @media(min-width:768px) {
     header {
-      height: 510px;
+      height: 550px;
       margin-top: 100px;
     }
 }
@@ -105,12 +105,12 @@ header .intro-text .name {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
+	padding-top: 30px;
 }
 
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 700;
-    text-shadow: 1px 1px 1px #000;
 }
 
 @media(min-width:768px) {
